@@ -42,7 +42,5 @@ false
 
 
 def full?(board)
-  board.all?  do |index|
-    index.position_taken?(board, index)
-  end
+  board.any? { |Empty| Empty == " "  }
 end
