@@ -42,6 +42,7 @@ false
 
 
 def full?(board)
-  board.any? |index|
-  !position_taken?
+  board.all?  do |index|
+    position_taken?
+  end
 end
