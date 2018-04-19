@@ -39,3 +39,29 @@ end
 end
 false
   end
+
+
+def full?(board)
+  board.any? |index| 
+  position_taken?
+end
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
