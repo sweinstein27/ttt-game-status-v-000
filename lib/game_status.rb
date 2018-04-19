@@ -41,6 +41,7 @@ false
   end
 
 
-def full?(board)
-  board.any? { |Empty| Empty == " "  }
-end
+  def full?(board)
+    board.all? {|index| index == "X" || index == "O"}
+  end
+  
